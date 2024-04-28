@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: black;
+        width: 290px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;  
+        border-radius: 14px;  
+    }
+   
+    .main{
+        background-color: pink;
+        width: 350px;
+        height: 371px;
+        border-radius: 14px;
+        background-color: black;
+        box-shadow: 10px 10px 5px pink;
+        margin: auto;
+    }
+    .boxes{
+        width: 50px;
+        height: 50px;
+       
+        border: 2px solid pink;
+        margin: 5px;
+        border-radius: 50%;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    .boxes:hover{
+        cursor: pointer;
+    }
+    input{
+        height: 30px;
+        border: 2px dotted brown;
+        border-radius: 10px;
+        width: 250px;
+        font-size:15px;
+        font-weight: bold;    
+    }
+    button{
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>LET'S CALCULATE!!</h1>
+    <div class="main">
+    <input type="text" placeholder="Enter your calculations">
+    <button>Ans</button>
+    <span>hey</span>
+    <div class="container">
+            <div class="boxes" id="clr">AC</div>
+            <div class="boxes">%</div>
+            <div class="boxes" id="del">Del</div>
+            <div class="boxes">=</div>
+            <div class="boxes">7</div>
+            <div class="boxes">8</div>
+            <div class="boxes">9</div>
+            <div class="boxes">4</div>
+            <div class="boxes">5</div>
+            <div class="boxes">6</div>
+            <div class="boxes">1</div>
+            <div class="boxes">2</div>
+            <div class="boxes">3</div>
+            <div class="boxes">00</div>
+            <div class="boxes">0</div>
+            <div class="boxes">.</div>
+            <div class="boxes">+</div>
+            <div class="boxes">-</div>
+            <div class="boxes">*</div>
+            <div class="boxes">/</div>
+    </div>
+</div>
+    <script src="calc.js"></script>
+</body>
+</html>
